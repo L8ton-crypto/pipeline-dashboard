@@ -3,7 +3,7 @@ import { getStats } from "@/lib/db";
 import { APP_COUNT } from "@/data/apps";
 
 export const runtime = "nodejs";
-export const revalidate = 300;
+export const dynamic = "force-dynamic";
 export const contentType = "image/png";
 
 export async function GET() {
@@ -43,10 +43,9 @@ export async function GET() {
           />
           <div style={{ fontSize: 28, color: "#9ca3af" }}>pipeline.dashboard</div>
         </div>
-        <div style={{ fontSize: 84, fontWeight: 800, marginTop: 32, lineHeight: 1.05 }}>
-          The portfolio
-          <br />
-          IS the product.
+        <div style={{ display: "flex", flexDirection: "column", fontSize: 84, fontWeight: 800, marginTop: 32, lineHeight: 1.05 }}>
+          <span>The portfolio</span>
+          <span>IS the product.</span>
         </div>
         <div style={{ display: "flex", gap: 56, marginTop: 56 }}>
           <Stat label="Apps shipped" value={String(APP_COUNT)} />
