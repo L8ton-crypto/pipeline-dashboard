@@ -51,6 +51,9 @@ export const APPS: ShippedApp[] = [
   { name: "WeatherGlobe", slug: "weather-globe", url: "https://weather-globe-nu.vercel.app", category: "globe", description: "Live weather globe." },
   { name: "FlightRadar", slug: "flight-radar", url: "https://flight-radar-chi.vercel.app", category: "globe", description: "Live aircraft globe." },
   { name: "StatusPulse", slug: "status-pulse", url: "https://status-pulse.vercel.app", category: "monitoring", description: "Endpoint monitoring." },
+  { name: "Parent Log", slug: "parent-log", url: "https://parent-log.vercel.app", category: "family", description: "Parent communication tracker." },
+  { name: "AI-Washing Detector", slug: "ai-washing-detector", url: "https://ai-washing-detector.vercel.app", category: "business", description: "SEC 10-K AI-washing scorer." },
+  { name: "Pipeline Dashboard", slug: "pipeline-dashboard", url: "https://pipeline-dashboard-beta.vercel.app", category: "dashboard", description: "Live overnight pipeline readout." },
 ];
 
 export const APP_COUNT = APPS.length;
